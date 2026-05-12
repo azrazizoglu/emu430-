@@ -45,10 +45,12 @@ format:
   html:
     toc: true
     toc-location: left
-    theme: 
-      light: pulse 
+    theme:
+      light: pulse
       dark: superhero
     css: styles.css
+    code-fold: true
+    code-summary: "Kodu göster"
 
 
 editor: visual
