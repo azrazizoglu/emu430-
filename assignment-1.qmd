@@ -1,0 +1,53 @@
+---
+title: "Assignment 1"
+author: "Azra"
+engine: knitr
+---
+
+# Assignment 1
+
+```{r}
+library(tidyverse)
+library(dslabs)
+
+my_first <- "Azra"
+my_birth_year <- 2002 
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+
+data("polls_us_election_2016")
+polls <- polls_us_election_2016
+
+tail(polls, k)
+sum(is.na(polls))
+sort(colSums(is.na(polls)), decreasing = TRUE)[1:8]
+
+yeni_polls <- polls %>%
+  mutate(across(where(is.numeric), ~ replace_na(., my_birth_year + k)),
+         across(where(is.character) | where(is.factor), ~ replace_na(as.character(.), paste0(my_first, k))))
+
+tail(yeni_polls, k)
+sum(is.na(yeni_polls))
+anyNA(yeni_polls)
+```
+
+## (a) **Kerem Demirtaş & Erdi Daşdemir**
+
+The video offers an extremely interesting view by first discussing what data science is not and clearing up some common misconceptions about the field. It highlights that data science is actually an old practice and not just a recent technical trend. The video is supported by various historical examples from public health cases in the 19th century to weather models from the early 20th century, showing how data has long been used to solve complex problems and disprove old theories. The speaker also discusses how the typical workflow from problem definition to exploratory analysis demonstrates how the field has developed into the predictive and prescriptive systems used today. The video demonstrates that the primary purpose of data science has always been to turn raw information into valuable insights to help with decision-making in any field.
+
+## (b)
+
+**Question 1 (Open-ended):** According to the data science workflow and the historical examples discussed in the video, why is "Problem Definition" considered the most critical starting point, and how does it relate to the final "Production" stage?
+
+**Answer:** The workflow emphasizes that before collecting data or building models, one must clearly define the problem and understand the business value it aims to create. As seen in historical cases like John Snow’s mapping or early weather forecasting, the goal was always to solve a specific real-world challenge. This initial definition is crucial because the final "Production" stage is only successful if the model provides actionable insights that directly address that original problem in a live environment.
+
+**Question 2 (Multiple Choice):** Based on the lecture slides regarding the definition and common misconceptions of Data Science, which of the following statements is **correct**?
+
+**A)** Data Science is interchangeable with AI/ML.
+
+**B)** Data Science is all about big data.
+
+**C)** Data Science is the interdisciplinary field that bridges multiple disciplines, including statistics, computer science, domain expertise, and engineering.
+
+**D)** Data Science doesn't need domain expertise.
+
+**Answer:** **C**
