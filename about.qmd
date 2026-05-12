@@ -1,0 +1,42 @@
+---
+title: "About Me"
+sidebar: false 
+---
+
+# Education
+
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 2021 - ongoing.
+
+# Work Experience
+
+## Internships
+
+1.  **Zorlu Energy**, Business Development and Investment Intern, 2025
+
+    Transformed raw market and operational data into actionable business insights using Excel-based optimization models.
+
+    Developed intuitive dashboards to track Key Performance Indicators (KPIs) and visualize complex trends.
+
+    Collaborated with management to define success metrics for new projects.
+
+2.  **Yepsan Defence and Aviation Industry Inc.**, Production Planning and Control Intern, 2024
+
+    Audited and cleaned OEE (Overall Equipment Effectiveness) data within the ERP system to ensure high data quality.
+
+    Analyzed workflow data to identify bottlenecks and improve operational efficiency.
+
+# Projects
+
+**Facility Location and Layout for Olive Pomace Processing Factory (2024):** Built a comprehensive techno-economic model, analyzing logistics costs and market factors to determine the optimal facility location.
+
+**Erasmus+ Digicomp Project (Slovakia, 2022):** Participated in workshops focused on digital transformation and adaptability to new data tools.
+
+# Competencies
+
+R, Quarto, Git, Python
+
+# Hobbies
+
+Screen writing , playing tennis
+
+`[Download my full CV (PDF)](My_CV.pdf)`

@@ -1,0 +1,10 @@
+---
+title: "Welcome to My Analytics Lab"
+sidebar: false 
+---
+
+**Hello! My name is Azra Azizoğlu.**
+
+**I am an Industrial Engineering student at Hacettepe University. This is my personal analytics lab where I share my journey through data science, my course projects, and my professional insights.**
+
+**Please stay tuned to follow my works on data analytics, blog posts, and more.**
